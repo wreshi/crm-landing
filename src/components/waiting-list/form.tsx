@@ -18,6 +18,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { createSubmissionSchema } from "@/schema/submissions.schema";
 import createSubmission from "@/server/submissions";
+import { RainbowButton } from "../ui/rainbow-button";
 
 export function WaitingListForm() {
   const form = useForm<z.infer<typeof createSubmissionSchema>>({
@@ -33,22 +34,35 @@ export function WaitingListForm() {
   }
 
   return (
-    <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-2">
-        <FormField
-          control={form.control}
-          name="email"
-          render={({ field }) => (
-            <FormItem>
-              <FormControl>
-                <Input placeholder="email" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <Button type="submit">Submit</Button>
-      </form>
-    </Form>
+    <div className="flex items-center justify-center w-screen pb-10">
+      <Form {...form}>
+        <form onSubmit={form.handleSubmit(onSubmit)}>
+          <div className="w-full flex gap-2">
+            <FormField
+              control={form.control}
+              name="email"
+              render={({ field }) => (
+                <FormItem>
+                  <FormControl>
+                    <Input
+                      placeholder="Enter your email"
+                      className="h-9 w-80"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <RainbowButton
+              className="h-9 px-3 text-sm rounded-lg"
+              type="submit"
+            >
+              Join Waitlist
+            </RainbowButton>
+          </div>
+        </form>
+      </Form>
+    </div>
   );
 }
