@@ -3,6 +3,8 @@ import "./globals.css";
 import { Toaster } from "sonner";
 import { GeistSans } from "geist/font/sans";
 import { ThemeProvider } from "@/providers/theme-provider";
+import { Header } from "@/components/waiting-list/header";
+import { Footer } from "@/components/waiting-list/footer";
 
 export const metadata: Metadata = {
   title: "Asend",
@@ -19,11 +21,14 @@ export default function RootLayout({
       <body className={GeistSans.className + ""}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="light"
           disableTransitionOnChange
         >
-          {children}
+          <main>
+            <Header />
+            {children}
+            <Footer />
+          </main>
         </ThemeProvider>
         <Toaster />
       </body>

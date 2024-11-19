@@ -12,9 +12,9 @@ export function Header() {
       </div>
       <div className="flex items-center gap-2">
         <Button variant={"outline"} className="!py-0 px-3 m-0 h-8">
-          Login
+          Login (Beta)
         </Button>
-        <ModeToggle />
+        {/* <ModeToggle /> */}
       </div>
     </section>
   );

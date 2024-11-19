@@ -7,13 +7,11 @@ import { ProductMockup } from "@/components/waiting-list/product-mockup";
 
 export default function Home() {
   return (
-    <main>
-      <Header />
+    <section>
       <Hero />
       <WaitingListForm />
       <ProductMockup />
       <Features />
-      <Footer />
-    </main>
+    </section>
   );
 }
