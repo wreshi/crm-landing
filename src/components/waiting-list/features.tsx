@@ -55,7 +55,7 @@ const FeatureCard = ({ title, description }: Feature) => {
 
 export function Features() {
   return (
-    <div className="py-10 pb-16 w-screen flex items-center justify-center px-4 sm:px-36 md:px-48 lg:px-64">
+    <div className="pt-14 pb-20 w-screen flex items-center justify-center px-4 sm:px-36 md:px-48 lg:px-64">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full">
         {features.map((feature, index) => (
           <FeatureCard key={index} {...feature} />
