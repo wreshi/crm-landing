@@ -7,6 +7,6 @@ const sql = neon(databaseUrl);
 
 // Initialize the database with the appropriate drizzle function and schema
 export const db = drizzle({
-  client: sql as any,
+  client: sql,
   schema,
 });
