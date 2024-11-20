@@ -22,7 +22,7 @@ export function Hero() {
         />
       </div>
       <div className="relative z-10">
-        <p className="text-center font-medium text-muted-foreground w-[26rem] sm:w-[29rem]">
+        <p className="text-center font-medium text-muted-foreground w-[20rem] sm:w-[29rem]">
           Fill in your information and we will let you know when we are
           accepting beta customers (so that you can get early access).
         </p>
