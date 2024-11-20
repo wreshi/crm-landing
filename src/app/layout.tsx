@@ -7,7 +7,12 @@ import { Header } from "@/components/waiting-list/header";
 import { Footer } from "@/components/waiting-list/footer";
 
 export const metadata: Metadata = {
-  title: "Asend",
+  title: {
+    default: `Asend${process.env.NODE_ENV === "development" ? " | Dev" : ""}`,
+    template: `%s | Asend${
+      process.env.NODE_ENV === "development" ? " | Dev" : ""
+    }`,
+  },
   description: "The revolutionary crm",
 };
 
