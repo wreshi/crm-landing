@@ -34,10 +34,10 @@ export function WaitingListForm() {
   }
 
   return (
-    <div className="flex items-center justify-center w-screen pb-10">
+    <div className="flex items-center justify-center w-screen pb-0 md:pb-10">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)}>
-          <div className="w-full flex gap-2">
+          <div className="w-full flex flex-col md:flex-row gap-2">
             <FormField
               control={form.control}
               name="email"
