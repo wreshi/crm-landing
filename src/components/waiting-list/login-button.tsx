@@ -9,9 +9,9 @@ export function LoginButton() {
     <Button
       variant={"outline"}
       className="!py-0 px-3 m-0 h-8"
-      onClick={() => router.push("https://app.ascendifyr.in/login")}
+      onClick={() => router.push("https://linkedin.com/company/asendcrm")}
     >
-      Login (Beta)
+      Follow on LinkedIn
     </Button>
   );
 }
