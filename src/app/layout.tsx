@@ -13,7 +13,7 @@ export const metadata: Metadata = {
       process.env.NODE_ENV === "development" ? " | Dev" : ""
     }`,
   },
-  description: "The revolutionary crm",
+  description: "The revolutionary CRM",
 };
 
 export default function RootLayout({
