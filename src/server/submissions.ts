@@ -6,11 +6,12 @@ import { submissionsTable } from "@/database/schema";
 import { ulid } from "ulid";
 import { cookies } from "next/headers";
 import { eq } from "drizzle-orm";
+import { loops } from "@/lib/loops";
 
 type CreateSubmissionResponse = {
   success: boolean;
   message: string;
-  code: 'EXISTING' | 'SUCCESS' | 'ERROR';
+  code: "EXISTING" | "SUCCESS" | "ERROR";
 };
 
 export default async function createSubmission({
@@ -21,9 +22,9 @@ export default async function createSubmission({
   });
   if (alreadyExists) {
     return {
-      success: false,
-      code: 'EXISTING',
-      message: "You are already in the waiting list",
+      success: true,
+      code: "SUCCESS",
+      message: "Already in the waiting list, no need to sign up again",
     };
   }
   const createdSubmission = await db
@@ -38,19 +39,34 @@ export default async function createSubmission({
   if (!createdSubmission) {
     return {
       success: false,
-      code: 'ERROR',
+      code: "ERROR",
       message: "Something went wrong",
     };
   }
-  const submissionId = btoa("signed_up_to_waitlist");
+  const contactProperties = {
+    userId: createdSubmission[0].id,
+    source: "waitlist-signup",
+  };
+  const resp = await loops.createContact(
+    createdSubmission[0].email,
+    contactProperties
+  );
+  if (!resp.success) {
+    return {
+      success: false,
+      code: "ERROR",
+      message: "Something went wrong",
+    };
+  }
   (await cookies()).set("waitlist", "true", {
     path: "/",
     secure: process.env.NODE_ENV === "production",
     sameSite: "strict",
+    maxAge: 60 * 60 * 24 * 7, // 7 days
   });
   return {
     success: true,
     message: "Submission created successfully",
-    code: 'SUCCESS',
+    code: "SUCCESS",
   };
 }
