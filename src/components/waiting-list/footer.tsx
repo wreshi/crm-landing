@@ -68,7 +68,7 @@ export function Footer() {
   return (
     <section className="py-5 border-t border-border w-screen flex flex-col md:flex-row items-center justify-between sm:px-20 md:px-30 lg:px-40 px-10 text-xs md:text-sm">
       <div className="flex flex-col md:flex-row items-center gap-3">
-        <span className="mr-3">© Asend Labs | 2024</span>
+        <span className="mr-3">© Asend Labs | 2025</span>
         {footerLinks.map((link, index) => (
           <FooterLink key={index} {...link} />
         ))}

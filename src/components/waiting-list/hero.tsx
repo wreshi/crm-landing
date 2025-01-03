@@ -14,7 +14,7 @@ export function Hero() {
           className="text-orange-500 rounded-full w-fit py-1.5 px-3"
         >
           <Circle className="mr-1 size-3 fill-orange-500" />
-          Launching in January
+          Launching in Q1 2025
         </Badge>
         <WordRotate
           className="text-3xl md:text-4xl font-bold text-black dark:text-white"
