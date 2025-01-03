@@ -8,34 +8,34 @@ interface Feature {
 
 const features: Feature[] = [
   {
-    title: "Sales AI",
+    title: "Clean Design",
     description:
-      "Talk to your CRM like a team member. Get instant insights, automate tasks, and let AI help you close more deals.",
+      "Embrace simplicity with a clutter-free interface. Focus on what matters most without unnecessary distractions.",
   },
   {
-    title: "Sales Predictions",
+    title: "Essential Tools",
     description:
-      "Know where your deals are headed. Get simple forecasts based on your sales data without the complexity.",
+      "Get exactly what you need, nothing more. Carefully selected features that streamline your workflow.",
   },
   {
-    title: "Built for you",
+    title: "Fast & Light",
     description:
-      "Whether you're a solopreneur or a small business, Asend is designed with simplcity in mind. Without any fuss.",
+      "Experience lightning-fast performance with our lightweight design. No bloat, just pure efficiency.",
   },
   {
-    title: "Custom Pipeline",
+    title: "Custom Flow",
     description:
-      "Create a sales pipeline that matches how you actually work. No forced workflows, just your process digitized.",
+      "Adapt the system to your way of working. Simple customization options that don't overwhelm.",
   },
   {
-    title: "Manage your team",
+    title: "Focus Mode",
     description:
-      "Keep your team aligned and deals moving. Simple team management without the overhead.",
+      "Concentrate on one task at a time. Clean workspace design that promotes productivity and clarity.",
   },
   {
-    title: "Opinionated design",
+    title: "Thoughtful Details",
     description:
-      "A clean, focused interface that helps you get things done. We chose simplicity over endless customization and 90s web design.",
+      "Every element serves a purpose. Carefully crafted interface with intention behind every feature.",
   },
 ];
 
@@ -48,7 +48,9 @@ const FeatureCard = ({ title, description }: Feature) => {
       >
         {title}
       </Badge>
-      <p className="font-medium text-muted-foreground mt-2 text-sm">{description}</p>
+      <p className="font-medium text-muted-foreground mt-2 text-sm">
+        {description}
+      </p>
     </div>
   );
 };
