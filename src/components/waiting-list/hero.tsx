@@ -18,7 +18,7 @@ export function Hero() {
         </Badge>
         <WordRotate
           className="text-4xl md:text-5xl font-bold text-black dark:text-white"
-          words={["The AI CRM", "Talk to your CRM", "LLM Powered CRM"]}
+          words={["Your Uncomplicated CRM"]}
         />
       </div>
       <div className="relative z-10">

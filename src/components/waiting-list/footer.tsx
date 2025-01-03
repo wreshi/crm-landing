@@ -2,7 +2,7 @@ import React from "react";
 import { Logo } from "../logo";
 import { Button } from "../ui/button";
 import Link from "next/link";
-import { Linkedin, LucideIcon, Twitter } from "lucide-react";
+import { Github, Linkedin, LucideIcon, Twitter } from "lucide-react";
 
 interface FooterLinkProps {
   href: string;
@@ -39,10 +39,14 @@ const FooterSocialLink = (props: FooterSocialLinkProps) => {
 
 const footerSocialLinks: FooterSocialLinkProps[] = [
   {
-    href: "https://twitter.com/asendcrm",
+    href: "https://twitter.com/asendlabs",
     icon: Twitter,
   },
-  { href: "https://linkedin.com/company/asendcrm", icon: Linkedin },
+  { href: "https://linkedin.com/company/asendlabs", icon: Linkedin },
+  {
+    href: "https://github.com/asendlabs",
+    icon: Github,
+  },
 ];
 
 const footerLinks: FooterLinkProps[] = [
@@ -64,7 +68,7 @@ export function Footer() {
   return (
     <section className="py-5 border-t border-border w-screen flex flex-col md:flex-row items-center justify-between sm:px-20 md:px-30 lg:px-40 px-10 text-xs md:text-sm">
       <div className="flex flex-col md:flex-row items-center gap-3">
-        <span className="mr-3">© Ascendifyr Labs | 2024</span>
+        <span className="mr-3">© Asend Labs | 2024</span>
         {footerLinks.map((link, index) => (
           <FooterLink key={index} {...link} />
         ))}
