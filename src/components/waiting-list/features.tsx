@@ -8,7 +8,7 @@ interface Feature {
 
 const features: Feature[] = [
   {
-    title: "Clean Design",
+    title: "Focused Design",
     description:
       "Embrace simplicity with a clutter-free interface. Focus on what matters most without unnecessary distractions.",
   },
@@ -23,19 +23,18 @@ const features: Feature[] = [
       "Experience lightning-fast performance with our lightweight design. No bloat, just pure efficiency.",
   },
   {
-    title: "Custom Flow",
+    title: "Deal & Lead Management",
     description:
-      "Adapt the system to your way of working. Simple customization options that don't overwhelm.",
+      "Manage deals and leads effortlessly. Track and prioritize your activities with ease.",
   },
   {
-    title: "Focus Mode",
-    description:
-      "Concentrate on one task at a time. Clean workspace design that promotes productivity and clarity.",
+    title: "Task Management",
+    description: "Keep track of your lead or client related tasks without any rocket science.",
   },
   {
     title: "Thoughtful Details",
     description:
-      "Every element serves a purpose. Carefully crafted interface with intention behind every feature.",
+      "Every element serves a purpose. There is intention behind every feature.",
   },
 ];
 
