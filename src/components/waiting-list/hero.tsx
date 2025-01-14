@@ -17,7 +17,7 @@ export function Hero() {
           Launching in Q1 2025
         </Badge>
         <WordRotate
-          className="text-3xl md:text-4xl font-bold text-black dark:text-white"
+          className="text-2xl sm:text-3xl md:text-4xl font-bold text-black dark:text-white"
           words={["Your Uncomplicated CRM"]}
         />
       </div>
