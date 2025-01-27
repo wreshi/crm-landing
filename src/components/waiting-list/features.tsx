@@ -10,31 +10,32 @@ const features: Feature[] = [
   {
     title: "Focused Design",
     description:
-      "Embrace simplicity with a clutter-free interface. Focus on what matters most without unnecessary distractions.",
+      "A sleek, LinkedIn-focused interface that eliminates distractions, keeping you productive and efficient.",
   },
   {
-    title: "Essential Tools",
+    title: "Profile Data",
     description:
-      "Get exactly what you need, nothing more. Carefully selected features that streamline your workflow.",
+      "Extract and refresh LinkedIn profile details anytime—company info, connections, posts, and more, all in one place.",
   },
   {
-    title: "Fast & Light",
+    title: "Post Analysis",
     description:
-      "Experience lightning-fast performance with our lightweight design. No bloat, just pure efficiency.",
+      "Uncover key insights from LinkedIn posts—engagement metrics, trends, and performance, fast and efficiently.",
   },
   {
-    title: "Deal & Lead Management",
+    title: "Lead Summarization",
     description:
-      "Manage deals and leads effortlessly. Track and prioritize your activities with ease.",
+      "Get summaries on every lead and profile you want. No more wasting time on manual data entry and lookup.",
   },
   {
-    title: "Task Management",
-    description: "Keep track of your lead or client related tasks without any rocket science.",
-  },
-  {
-    title: "Thoughtful Details",
+    title: "DMs Analysis",
     description:
-      "Every element serves a purpose. There is intention behind every feature.",
+      "Analyze and manage LinkedIn direct messages with ease, ensuring no opportunity slips through the cracks.",
+  },
+  {
+    title: "Smart Suggestions",
+    description:
+      "Get actionable advice and tailored recommendations based on LinkedIn data to optimize your outreach strategy.",
   },
 ];
 
