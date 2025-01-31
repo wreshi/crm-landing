@@ -25,7 +25,7 @@ export function Hero() {
           <span className="relative inline-block bg-orange-600 px-2 py-1 rounded-full text-white transform rotate-[5deg]">
             LinkedIn 
           </span>{" "}
-          Growth Tool.
+          Client Acquisiton tool.
         </h1>
       </div>
       <div className="relative z-10 items-center flex flex-col pt-2">
