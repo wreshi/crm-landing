@@ -32,6 +32,7 @@ const FooterSocialLink = (props: FooterSocialLinkProps) => {
       target="_blank"
       className="flex items-center gap-2 text-muted-foreground hover:text-primary"
     >
+      <span className="sr-only">{props.href}</span>
       <props.icon className="size-[17px]" />
     </Link>
   );

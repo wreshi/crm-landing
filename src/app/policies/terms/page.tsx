@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import React from "react";
 
 export const metadata: Metadata = {
@@ -151,12 +152,12 @@ export default function TermsAndConditionsPage() {
             </h2>
             <p className="text-gray-700">
               For questions regarding these T&C, reach us at{" "}
-              <a
+              <Link
                 href="mailto:support@ascendifyr.in"
                 className="text-blue-600 hover:text-blue-800"
               >
                 support@ascendifyr.in
-              </a>
+              </Link>
               .
             </p>
           </article>

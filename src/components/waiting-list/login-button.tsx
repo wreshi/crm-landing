@@ -10,7 +10,7 @@ export function LoginButton() {
     <Button
       variant={"outline"}
       className="!py-0 px-3 m-0 h-8 flex items-center gap-2"
-      onClick={() => router.push("https://linkedin.com/company/asendcrm")}
+      onClick={() => router.push("https://linkedin.com/company/asendlabs")}
     >
       <Linkedin className="size-3"/>
       Follow on LinkedIn

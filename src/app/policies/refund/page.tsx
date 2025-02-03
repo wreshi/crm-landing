@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import React from "react";
 
 export const metadata: Metadata = {
@@ -95,12 +96,12 @@ export default function RefundPolicyPage() {
             </h2>
             <p className="text-gray-700">
               For questions regarding this Refund Policy, email{" "}
-              <a
+              <Link
                 href="mailto:refunds@ascendifyr.in"
                 className="text-blue-600 hover:text-blue-800"
               >
                 refunds@ascendifyr.in
-              </a>
+              </Link>
             </p>
           </article>
         </div>

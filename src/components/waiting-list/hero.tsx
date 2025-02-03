@@ -1,8 +1,6 @@
-import React from "react";
 import { Badge } from "../ui/badge";
 import { Circle } from "lucide-react";
 import Meteors from "@/components/ui/meteors";
-import WordRotate from "../ui/word-rotate";
 
 export function Hero() {
   return (
@@ -16,10 +14,6 @@ export function Hero() {
           <Circle className="mr-1 size-3 fill-orange-500" />
           Launching in Q1 2025
         </Badge>
-        {/* <WordRotate
-          className="text-2xl sm:text-3xl md:text-4xl font-bold text-black dark:text-white"
-          words={["Your Uncomplicated CRM"]}
-        /> */}
         <h1 className="max-w-[41.5rem] break-words text-center text-4xl font-bold text-black dark:text-white md:text-5xl">
           Your fullstack
           <span className="relative inline-block bg-orange-600 px-2 py-1 rounded-full text-white transform rotate-[5deg]">
