@@ -1,7 +1,7 @@
 export default async function sitemap() {
     return [
         {
-            url: 'https://ascendifyr.in',
+            url: 'https://www.ascendifyr.in',
             lastModified: new Date(),
             priority: 1,
         },

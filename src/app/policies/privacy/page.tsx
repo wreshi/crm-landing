@@ -217,12 +217,12 @@ export default function PrivacyPolicyPage() {
               </a>{" "}
               or visit our support page at{" "}
               <a
-                href="https://ascendifyr.in/support"
+                href="https://www.ascendifyr.in/support"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:text-blue-800 underline"
               >
-                https://ascendifyr.in/support
+                https://www.ascendifyr.in/support
               </a>
               .
             </p>

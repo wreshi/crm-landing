@@ -15,28 +15,26 @@ export const metadata: Metadata = {
   },
   description:
     "Asend is the ultimate full-stack LinkedIn client acquisition tool, designed to streamline lead generation, outreach, and sales automation.",
-  metadataBase: new URL("https://ascendifyr.in"),
+  metadataBase: new URL("https://www.ascendifyr.in"),
   keywords: [
     "LinkedIn automation",
-    "client acquisition",
-    "Ascendifyr",
+    "LinkedIn Client Acquistion",
     "Asend Labs",
-    "lead generation",
-    "sales automation",
-    "outreach tool",
-    "B2B sales",
     "LinkedIn CRM",
-    "AI-powered outreach",
+    "Asend CRM",
+    "LinkedIn AI",
     "LinkedIn growth",
-    "business development",
+    "LinkedIn Sales",
     "Fullstack linkedin tool",
     "LinkedIn Sales tools",
+    "LinkedIn Profile Scraping",
+    "LinkedIn Research"
   ],
   openGraph: {
     title: "Asend – The Fullstack LinkedIn Client Acquisition Tool",
     description:
       "Fullstack LinkedIn CRM, close high-quality leads, and scale your business with Asend.",
-    url: "https://ascendifyr.in",
+    url: "https://www.ascendifyr.in",
     siteName: "Asend",
     images: [
       {
@@ -56,7 +54,7 @@ export const metadata: Metadata = {
     images: ["/twitter-image.webp"],
   },
   alternates: {
-    canonical: "https://ascendifyr.in",
+    canonical: "https://www.ascendifyr.in",
   },
 };
 

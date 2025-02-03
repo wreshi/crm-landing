@@ -6,6 +6,6 @@ export default async function robots(): Promise<MetadataRoute.Robots> {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://ascendifyr.in/sitemap.xml",
+    sitemap: "https://www.ascendifyr.in/sitemap.xml",
   };
 }
